@@ -1,3 +1,4 @@
+@@ -0,0 +1,33 @@
 name: Publish to Docker
 on:
   push:
@@ -23,7 +24,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
-          username:  AleKiko 
+          username: ${{ github.repository_owner }}
           password: ${{ secrets.ALESSANDRO }}
       - name: Build container
         uses: docker/build-push-action@v5
