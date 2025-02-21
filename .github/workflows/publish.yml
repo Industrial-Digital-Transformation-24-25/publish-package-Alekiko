@@ -1,4 +1,3 @@
-@@ -0,0 +1,33 @@
 name: Publish to Docker
 on:
   push:
